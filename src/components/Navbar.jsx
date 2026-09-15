@@ -36,7 +36,7 @@ export default function Navbar() {
 
           <div className="hidden lg:flex items-center gap-3">
             <a href="#" className="text-sm text-mist-200 hover:text-white transition-colors px-3 py-2">Sign In</a>
-            <a href="#pricing" className="text-sm font-semibold bg-gradient-to-r from-cyan-500 to-violet-600 text-white transition hover:brightness-110 px-4 py-2 rounded-full">Request Demo</a>
+            <a href="#contact-us" className="text-sm font-semibold bg-gradient-to-r from-cyan-500 to-violet-600 text-white transition hover:brightness-110 px-4 py-2 rounded-full">Request Demo</a>
           </div>
 
           <button
@@ -59,7 +59,7 @@ export default function Navbar() {
             <a href="#faq" onClick={closeMenu} className="block py-2.5 text-mist-200 hover:text-white">Docs</a>
             <div className="pt-3 flex flex-col gap-2">
               <a href="#" onClick={closeMenu} className="text-center text-sm text-mist-200 border border-white/10 rounded-lg py-2.5">Sign In</a>
-              <a href="#pricing" onClick={closeMenu} className="text-center text-sm font-semibold bg-gradient-to-r from-cyan-500 to-violet-600 text-white rounded-full py-2.5">Request Demo</a>
+              <a href="#contact-us" onClick={closeMenu} className="text-center text-sm font-semibold bg-gradient-to-r from-cyan-500 to-violet-600 text-white rounded-full py-2.5">Request Demo</a>
             </div>
           </div>
         )}

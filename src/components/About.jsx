@@ -12,7 +12,7 @@ export default function About() {
               The Testing Partner Your Payment Infrastructure Can Trust
             </h2>
             <a
-              href="#features"
+              href="#contact-us"
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 text-white text-sm font-semibold px-5 py-2.5 hover:brightness-110 transition"
             >
               Learn More

@@ -15,6 +15,7 @@ import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
 import FAQ from './components/FAQ';
 import FinalCTA from './components/FinalCTA';
+import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -37,6 +38,7 @@ export default function App() {
         <Pricing />
         <FAQ />
         <FinalCTA />
+        <ContactUs />
       </main>
       <Footer />
     </div>
