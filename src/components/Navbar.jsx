@@ -18,7 +18,7 @@ export default function Navbar() {
         <nav className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
           <a href="#top" className="flex items-center gap-2.5 shrink-0" onClick={closeMenu}>
             <img
-              src="/logo-qatalyst.png"
+              src={`${import.meta.env.BASE_URL}logo-qatalyst.png`}
               alt="QAtalyst Logo"
               className="h-8 w-auto object-contain shrink-0"
               style={{ height: '32px', width: 'auto' }}

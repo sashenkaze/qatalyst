@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <a href="#top" className="flex items-center gap-2.5">
               <img
-                src="/logo-qatalyst.png"
+                src={`${import.meta.env.BASE_URL}logo-qatalyst.png`}
                 alt="QAtalyst Logo"
                 className="h-8 w-auto object-contain shrink-0"
                 style={{ height: '32px', width: 'auto' }}
