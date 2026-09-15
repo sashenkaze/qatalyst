@@ -19,9 +19,8 @@ export default function Footer() {
             </a>
             <p className="mt-4 text-sm text-mist-400 max-w-xs leading-relaxed">
               Next-gen enterprise payment &amp; core banking test automation, built by{' '}
-              <a href="#" className="underline hover:text-mist-200">HBM</a>.
+              <a href="https://hbm.co.id" target='blank' className="underline hover:text-mist-200">HBM</a>.
             </p>
-            <p className="mt-3 chip text-xs text-mist-500">qatalyst.hbm.co.id</p>
           </div>
 
           <div>
@@ -57,9 +56,6 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-mist-500">© <span>{currentYear}</span> QAtalyst — a product of PT Hexaon Business Mitrasindo. All rights reserved.</p>
-          <div className="flex items-center gap-2 chip text-[11px] text-mist-500">
-            <span className="w-1.5 h-1.5 rounded-full bg-pass"></span> All systems operational
-          </div>
         </div>
       </div>
     </footer>

@@ -56,7 +56,7 @@ export default function Methodology() {
               <div>
                 <h3 className="font-display font-semibold text-white text-lg">Protocol Mapping</h3>
                 <p className="mt-1.5 text-sm text-mist-400 leading-relaxed">
-                  We map your switch's protocol variant — ISO 8583, ISO 20022, or a QR scheme — to understand the exact message structure from the start.
+                  We map your switch's protocol variant — ISO 8583, ISO 20022, JSON, XML, or a QR scheme — to understand the exact message structure from the start.
                 </p>
               </div>
             </div>
