@@ -308,11 +308,11 @@ details.faq[open] summary .chevron {
 }
 
 .light .text-cyan-400 {
-  color: #0E7490 !important;
+  color: #A62226 !important;
 }
 
 .light .text-cyan-300 {
-  color: #0E7490 !important;
+  color: #A62226 !important;
 }
 
 .light .text-violet-300 {
@@ -454,12 +454,12 @@ details.faq[open] summary .chevron {
 
 .light .theme-fixed-dark.text-cyan-300,
 .light .theme-fixed-dark .text-cyan-300 {
-  color: #67E8F9 !important;
+  color: #F49B9D !important;
 }
 
 .light .theme-fixed-dark.text-violet-300,
 .light .theme-fixed-dark .text-violet-300 {
-  color: #A5B4FC !important;
+  color: #9DB6DE !important;
 }
 
 .light .theme-fixed-dark.text-violet-400,
@@ -573,12 +573,12 @@ details.faq[open] summary .chevron {
 
 .light .graphic-panel.text-cyan-300,
 .light .graphic-panel .text-cyan-300 {
-  color: #67E8F9 !important;
+  color: #F49B9D !important;
 }
 
 .light .graphic-panel.text-violet-300,
 .light .graphic-panel .text-violet-300 {
-  color: #A5B4FC !important;
+  color: #9DB6DE !important;
 }
 
 .light .graphic-panel.text-violet-400,

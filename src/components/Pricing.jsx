@@ -87,7 +87,7 @@ export default function Pricing() {
 
           {/* PROFESSIONAL */}
           <div className="relative rounded-2xl border border-cyan-400/40 bg-gradient-to-b from-violet-500/[0.08] to-transparent p-7 flex flex-col h-full shadow-glow lg:-mt-4 lg:mb-4">
-            <span className="absolute -top-3 left-7 chip text-[11px] font-semibold text-ink-950 bg-gradient-to-r from-cyan-400 to-violet-400 rounded-full px-3 py-1">MOST POPULAR</span>
+            <span className="absolute -top-3 left-7 chip text-[11px] font-semibold text-white bg-gradient-to-r from-cyan-400 to-violet-400 rounded-full px-3 py-1">MOST POPULAR</span>
             <div className="flex items-center gap-2 text-cyan-300">
               <Rocket className="w-[18px] h-[18px]" />
               <span className="text-sm font-medium">Professional</span>

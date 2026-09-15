@@ -92,13 +92,13 @@ export default function ScenarioExplorer() {
                 <span className="chip text-[10px] text-pass border border-pass/40 rounded px-1.5 py-0.5">SAMPLE</span>
               </div>
               <pre className="font-mono text-[12px] leading-6 p-4 overflow-x-auto text-slate-300">
-                <span className="text-sky-400">MTI</span>        0200{"\n"}
-                <span className="text-sky-400">DE003</span> ProcCode      28 00 00{"\n"}
-                <span className="text-sky-400">DE004</span> Amount        000000150000{"\n"}
-                <span className="text-sky-400">DE018</span> MerchCategory 6051{"\n"}
-                <span className="text-sky-400">DE041</span> TermId        QATLYST01{"\n"}
-                <span className="text-sky-400">DE048</span> BillerCode    88908{"\n"}
-                <span className="text-sky-400">DE102</span> CustomerId    3300112233
+                <span className="text-cyan-400">MTI</span>        0200{"\n"}
+                <span className="text-cyan-400">DE003</span> ProcCode      28 00 00{"\n"}
+                <span className="text-cyan-400">DE004</span> Amount        000000150000{"\n"}
+                <span className="text-cyan-400">DE018</span> MerchCategory 6051{"\n"}
+                <span className="text-cyan-400">DE041</span> TermId        QATLYST01{"\n"}
+                <span className="text-cyan-400">DE048</span> BillerCode    88908{"\n"}
+                <span className="text-cyan-400">DE102</span> CustomerId    3300112233
               </pre>
             </div>
           </div>
@@ -139,12 +139,12 @@ export default function ScenarioExplorer() {
               <pre className="font-mono text-[12px] leading-6 p-4 overflow-x-auto text-slate-300 font-normal">
 {`{
   `}
-                <span className="text-sky-400">"nmid"</span>: <span className="text-fuchsia-300">"ID1023456789012"</span>,{"\n"}  
-                <span className="text-sky-400">"merchantCity"</span>: <span className="text-fuchsia-300">"JAKARTA"</span>,{"\n"}  
-                <span className="text-sky-400">"amount"</span>: 150000,{"\n"}  
-                <span className="text-sky-400">"currency"</span>: <span className="text-fuchsia-300">"360"</span>,{"\n"}  
-                <span className="text-sky-400">"refId"</span>: <span className="text-fuchsia-300">"QTLY-QR-88213"</span>,{"\n"}  
-                <span className="text-sky-400">"crc"</span>: <span className="text-fuchsia-300">"9F2A"</span>{"\n"}
+                <span className="text-cyan-400">"nmid"</span>: <span className="text-violet-400">"ID1023456789012"</span>,{"\n"}  
+                <span className="text-cyan-400">"merchantCity"</span>: <span className="text-violet-400">"JAKARTA"</span>,{"\n"}  
+                <span className="text-cyan-400">"amount"</span>: 150000,{"\n"}  
+                <span className="text-cyan-400">"currency"</span>: <span className="text-violet-400">"360"</span>,{"\n"}  
+                <span className="text-cyan-400">"refId"</span>: <span className="text-violet-400">"QTLY-QR-88213"</span>,{"\n"}  
+                <span className="text-cyan-400">"crc"</span>: <span className="text-violet-400">"9F2A"</span>{"\n"}
 {`}`}
               </pre>
             </div>
@@ -184,13 +184,13 @@ export default function ScenarioExplorer() {
                 <span className="chip text-[10px] text-pass border border-pass/40 rounded px-1.5 py-0.5">SAMPLE</span>
               </div>
               <pre className="font-mono text-[12px] leading-6 p-4 overflow-x-auto text-slate-300">
-                <span className="text-sky-400">MTI</span>        0100{"\n"}
-                <span className="text-sky-400">DE002</span> PAN           4021••••••1123{"\n"}
-                <span className="text-sky-400">DE003</span> ProcCode      00 00 00{"\n"}
-                <span className="text-sky-400">DE022</span> PosEntryMode  051{"\n"}
-                <span className="text-sky-400">DE052</span> PinBlock      AF31C0E29B14FF02{"\n"}
-                <span className="text-sky-400">DE055</span> EmvData       9F2608...9F3704{"\n"}
-                <span className="text-sky-400">DE064</span> MAC           7C3A91FE
+                <span className="text-cyan-400">MTI</span>        0100{"\n"}
+                <span className="text-cyan-400">DE002</span> PAN           4021••••••1123{"\n"}
+                <span className="text-cyan-400">DE003</span> ProcCode      00 00 00{"\n"}
+                <span className="text-cyan-400">DE022</span> PosEntryMode  051{"\n"}
+                <span className="text-cyan-400">DE052</span> PinBlock      AF31C0E29B14FF02{"\n"}
+                <span className="text-cyan-400">DE055</span> EmvData       9F2608...9F3704{"\n"}
+                <span className="text-cyan-400">DE064</span> MAC           7C3A91FE
               </pre>
             </div>
           </div>
@@ -229,12 +229,12 @@ export default function ScenarioExplorer() {
                 <span className="chip text-[10px] text-warn border border-warn/40 rounded px-1.5 py-0.5">EDGE CASE</span>
               </div>
               <pre className="font-mono text-[12px] leading-6 p-4 overflow-x-auto text-slate-300">
-                <span className="text-sky-400">MTI</span>        0110{"\n"}
-                <span className="text-sky-400">DE002</span> PAN           4021••••••1123{"\n"}
-                <span className="text-sky-400">DE003</span> ProcCode      00 00 00{"\n"}
-                <span className="text-sky-400">DE004</span> Amount        000000075000{"\n"}
-                <span className="text-sky-400">DE011</span> STAN          004826{"\n"}
-                <span className="text-sky-400">DE037</span> RetrRefNum    250910004826{"\n"}
+                <span className="text-cyan-400">MTI</span>        0110{"\n"}
+                <span className="text-cyan-400">DE002</span> PAN           4021••••••1123{"\n"}
+                <span className="text-cyan-400">DE003</span> ProcCode      00 00 00{"\n"}
+                <span className="text-cyan-400">DE004</span> Amount        000000075000{"\n"}
+                <span className="text-cyan-400">DE011</span> STAN          004826{"\n"}
+                <span className="text-cyan-400">DE037</span> RetrRefNum    250910004826{"\n"}
                 <span className="text-fail">DE039</span> RespCode      <span className="text-fail">61 (velocity limit)</span>
               </pre>
             </div>

@@ -56,11 +56,11 @@ export default function Solutions() {
                     <path d="M0,0 L6,3 L0,6 Z" fill="#7C8AA8"></path>
                   </marker>
                 </defs>
-                <path d="M300,90 H560" stroke="#D12E32" strokeWidth="1.75" fill="none" className="flow-path" markerEnd="url(#arrowA)"></path>
-                <text x="430" y="80" textAnchor="middle" fill="#D12E32" fontSize="11.5" fontFamily="JetBrains Mono, monospace">request</text>
+                <path d="M316,88 H584" stroke="#D12E32" strokeWidth="1.75" fill="none" className="flow-path" markerEnd="url(#arrowA)"></path>
+                <text x="450" y="76" textAnchor="middle" fill="#D12E32" fontSize="11.5" fontFamily="JetBrains Mono, monospace">request</text>
 
-                <path d="M560,150 H300" stroke="#7C8AA8" strokeWidth="1.5" fill="none" strokeDasharray="4 4" markerEnd="url(#arrowB)"></path>
-                <text x="430" y="168" textAnchor="middle" fill="#94A3B8" fontSize="11.5" fontFamily="JetBrains Mono, monospace">response</text>
+                <path d="M584,148 H316" stroke="#7C8AA8" strokeWidth="1.5" fill="none" strokeDasharray="5 5" markerEnd="url(#arrowB)"></path>
+                <text x="450" y="167" textAnchor="middle" fill="#94A3B8" fontSize="11.5" fontFamily="JetBrains Mono, monospace">response</text>
 
                 <g>
                   <rect x="60" y="40" width="240" height="140" rx="14" fill="#16233F" stroke="#D12E32" strokeOpacity="0.4"></rect>
@@ -96,11 +96,11 @@ export default function Solutions() {
                     <path d="M0,0 L6,3 L0,6 Z" fill="#D12E32"></path>
                   </marker>
                 </defs>
-                <path d="M300,90 H560" stroke="#7C8AA8" strokeWidth="1.5" fill="none" markerEnd="url(#arrowC)"></path>
-                <text x="430" y="80" textAnchor="middle" fill="#94A3B8" fontSize="11.5" fontFamily="JetBrains Mono, monospace">request</text>
+                <path d="M316,88 H584" stroke="#7C8AA8" strokeWidth="1.5" fill="none" strokeDasharray="5 5" markerEnd="url(#arrowC)"></path>
+                <text x="450" y="76" textAnchor="middle" fill="#94A3B8" fontSize="11.5" fontFamily="JetBrains Mono, monospace">request</text>
 
-                <path d="M560,150 H300" stroke="#D12E32" strokeWidth="1.75" fill="none" className="flow-path" markerEnd="url(#arrowD)"></path>
-                <text x="430" y="168" textAnchor="middle" fill="#D12E32" fontSize="11.5" fontFamily="JetBrains Mono, monospace">response</text>
+                <path d="M584,148 H316" stroke="#D12E32" strokeWidth="1.75" fill="none" className="flow-path" markerEnd="url(#arrowD)"></path>
+                <text x="450" y="167" textAnchor="middle" fill="#D12E32" fontSize="11.5" fontFamily="JetBrains Mono, monospace">response</text>
 
                 <g>
                   <rect x="60" y="40" width="240" height="140" rx="14" fill="#141D33" stroke="#28334D"></rect>

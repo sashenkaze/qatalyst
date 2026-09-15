@@ -55,6 +55,12 @@ export default {
         glow: '0 0 0 1px rgba(209,46,50,0.18), 0 8px 40px -8px rgba(32,70,131,0.45)',
         card: '0 1px 2px rgba(16,24,40,0.04), 0 1px 3px rgba(16,24,40,0.06)',
       },
+      ringColor: {
+        DEFAULT: '#D12E32',
+      },
+      ringOpacity: {
+        DEFAULT: '0.5',
+      },
     },
   },
   plugins: [],
