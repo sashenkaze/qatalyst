@@ -40,7 +40,7 @@ export default function Portfolio() {
             </h2>
             <p className="mt-3 text-mist-300 leading-relaxed">Client names are anonymized per confidentiality agreements — testing results and scope are shown as they are.</p>
           </div>
-          <a href="#contact-us" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 text-white text-sm font-semibold px-5 py-2.5 hover:brightness-110 transition shrink-0">
+          <a href="#/contact" className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 text-white text-sm font-semibold px-5 py-2.5 hover:brightness-110 transition shrink-0">
             View All
             <ArrowRight className="w-4 h-4" />
           </a>

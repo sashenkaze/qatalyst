@@ -94,7 +94,7 @@ export default function OnboardingCarousel() {
 
         <div className="mt-10 text-center">
           <a
-            href="#contact-us"
+            href="#/contact"
             className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-semibold px-6 py-3 hover:brightness-110 transition"
           >
             Try the Free Sandbox

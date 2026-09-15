@@ -1,14 +1,19 @@
 import React from 'react';
 
-export default function Footer() {
+export default function Footer({ onNavigate, isHome = true }) {
   const currentYear = new Date().getFullYear();
+
+  const linkTo = (e, sectionId) => {
+    e.preventDefault();
+    if (onNavigate) onNavigate(sectionId);
+  };
 
   return (
     <footer className="relative border-t border-white/5 py-14 bg-ink-900">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10">
           <div className="lg:col-span-2">
-            <a href="#top" className="flex items-center gap-2.5">
+            <a href={isHome ? '#top' : '#/'} onClick={(e) => linkTo(e, 'top')} className="flex items-center gap-2.5">
               <img
                 src={`${import.meta.env.BASE_URL}logo-qatalyst.png`}
                 alt="QAtalyst Logo"
@@ -26,19 +31,19 @@ export default function Footer() {
           <div>
             <p className="text-sm font-semibold text-white mb-4">Product</p>
             <ul className="space-y-2.5 text-sm text-mist-400">
-              <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
-              <li><a href="#solutions" className="hover:text-white transition-colors">Solutions</a></li>
-              <li><a href="#scenarios" className="hover:text-white transition-colors">Test Scenarios</a></li>
-              <li><a href="#pricing" className="hover:text-white transition-colors">Pricing</a></li>
+              <li><a href="#features" onClick={(e) => linkTo(e, 'features')} className="hover:text-white transition-colors">Features</a></li>
+              <li><a href="#solutions" onClick={(e) => linkTo(e, 'solutions')} className="hover:text-white transition-colors">Solutions</a></li>
+              <li><a href="#scenarios" onClick={(e) => linkTo(e, 'scenarios')} className="hover:text-white transition-colors">Test Scenarios</a></li>
+              <li><a href="#pricing" onClick={(e) => linkTo(e, 'pricing')} className="hover:text-white transition-colors">Pricing</a></li>
             </ul>
           </div>
 
           <div>
             <p className="text-sm font-semibold text-white mb-4">Service</p>
             <ul className="space-y-2.5 text-sm text-mist-400">
-              <li><a href="#qaas" className="hover:text-white transition-colors">QA-as-a-Service</a></li>
-              <li><a href="#faq" className="hover:text-white transition-colors">Docs</a></li>
-              <li><a href="#faq" className="hover:text-white transition-colors">FAQ</a></li>
+              <li><a href="#qaas" onClick={(e) => linkTo(e, 'qaas')} className="hover:text-white transition-colors">QA-as-a-Service</a></li>
+              <li><a href="#faq" onClick={(e) => linkTo(e, 'faq')} className="hover:text-white transition-colors">Docs</a></li>
+              <li><a href="#faq" onClick={(e) => linkTo(e, 'faq')} className="hover:text-white transition-colors">FAQ</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Status</a></li>
             </ul>
           </div>
@@ -47,7 +52,7 @@ export default function Footer() {
             <p className="text-sm font-semibold text-white mb-4">Company</p>
             <ul className="space-y-2.5 text-sm text-mist-400">
               <li><a href="#" className="hover:text-white transition-colors">About HBM</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact Sales</a></li>
+              <li><a href="#/contact" className="hover:text-white transition-colors">Contact Sales</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
             </ul>

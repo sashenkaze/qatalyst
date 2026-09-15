@@ -65,7 +65,7 @@ export default function Hero() {
 
         <div className="mt-8 flex flex-col sm:flex-row gap-3.5 justify-center">
           <a
-            href="#contact-us"
+            href="#/contact"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-semibold px-7 py-3.5 shadow-glow hover:brightness-110 transition"
           >
             Talk to Us

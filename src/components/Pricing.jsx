@@ -70,7 +70,7 @@ export default function Pricing() {
             </p>
             <p className="text-sm text-mist-400 mt-4">For fintech sandboxes &amp; single-protocol integrators validating one payment rail.</p>
 
-            <a href="#contact-us" className="mt-6 block text-center rounded-full border border-white/15 text-white font-semibold py-3 hover:bg-white/10 transition">Start Free Sandbox</a>
+            <a href="#/contact" className="mt-6 block text-center rounded-full border border-white/15 text-white font-semibold py-3 hover:bg-white/10 transition">Start Free Sandbox</a>
 
             <ul className="mt-7 space-y-3 text-sm text-mist-300">
               <li className="flex gap-2.5"><Check className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />Core platform, dashboards &amp; monitoring</li>
@@ -106,7 +106,7 @@ export default function Pricing() {
             </p>
             <p className="text-sm text-mist-300 mt-4">For growing switch integrators, PSPs and payment gateways running full-suite regression.</p>
 
-            <a href="#contact-us" className="mt-6 block text-center rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 text-white font-semibold py-3 hover:brightness-110 transition">Start Free Sandbox</a>
+            <a href="#/contact" className="mt-6 block text-center rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 text-white font-semibold py-3 hover:brightness-110 transition">Start Free Sandbox</a>
 
             <ul className="mt-7 space-y-3 text-sm text-mist-200">
               <li className="flex gap-2.5"><Check className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />Everything in Starter, plus:</li>
@@ -133,7 +133,7 @@ export default function Pricing() {
             <p className="text-xs text-mist-500 mt-1.5">Scoped to your infrastructure &amp; SLA</p>
             <p className="text-sm text-mist-400 mt-4">For core banking platforms and large financial institutions who need a testing partner, not just a tool.</p>
 
-            <a href="#faq" className="mt-6 block text-center rounded-full border border-white/15 text-white font-semibold py-3 hover:bg-white/10 transition">Contact Us / Book a Call</a>
+            <a href="#/contact" className="mt-6 block text-center rounded-full border border-white/15 text-white font-semibold py-3 hover:bg-white/10 transition">Contact Us / Book a Call</a>
 
             <ul className="mt-7 space-y-3 text-sm text-mist-300">
               <li className="flex gap-2.5"><Check className="w-4 h-4 text-violet-400 shrink-0 mt-0.5" />Everything in Professional, plus:</li>
@@ -227,7 +227,7 @@ export default function Pricing() {
                 </div>
               </div>
 
-              <a href="#contact-us" className="mt-8 w-full inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 text-white font-semibold px-6 py-3.5 hover:brightness-110 transition">
+              <a href="#/contact" className="mt-8 w-full inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 text-white font-semibold px-6 py-3.5 hover:brightness-110 transition">
                 See the plan that fits
                 <ArrowRight className="w-4 h-4" />
               </a>

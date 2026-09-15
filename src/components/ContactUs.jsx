@@ -9,7 +9,7 @@ const highlights = [
 
 const contactChannels = [
   { icon: Phone, label: 'Phone', value: '+62 21 27893347' },
-  { icon: Mail, label: 'Email', value: 'marketing@hbm.co.id' },
+  { icon: Mail, label: 'Email', value: 'sales@hbm.co.id' },
   {
     icon: MapPin,
     label: 'Office',
@@ -41,7 +41,7 @@ export default function ContactUs() {
   };
 
   return (
-    <section id="contact-us" className="bg-[#F8FAFC] py-16 sm:py-20">
+    <section id="contact-us" className="bg-[#F8FAFC] pt-24 pb-16 sm:pt-28 sm:pb-20">
       <div className="mx-auto grid w-full max-w-7xl items-stretch gap-10 px-6 lg:grid-cols-2 lg:px-8">
         {/* Left column: intro + contact channels */}
         <div>

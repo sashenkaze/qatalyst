@@ -18,7 +18,7 @@ export default function Risk() {
 
         <div className="mt-8 flex flex-col sm:flex-row gap-3">
           <a
-            href="#contact-us"
+            href="#/contact"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-semibold px-6 py-3 hover:brightness-110 transition"
           >
             Talk to Us Urgently

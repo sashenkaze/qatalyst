@@ -47,7 +47,7 @@ export default function QaaS() {
               </div>
             </div>
 
-            <a href="#contact-us" className="mt-9 inline-flex items-center gap-2 text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
+            <a href="#/contact" className="mt-9 inline-flex items-center gap-2 text-cyan-400 font-semibold hover:text-cyan-300 transition-colors">
               See QaaS engagement options
               <ArrowRight className="w-4 h-4" />
             </a>
