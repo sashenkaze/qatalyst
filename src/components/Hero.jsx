@@ -70,13 +70,6 @@ export default function Hero() {
           >
             Talk to Us
           </a>
-          <a
-            href="#scenarios"
-            className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 text-mist-100 font-semibold px-7 py-3.5 hover:bg-white/10 transition"
-          >
-            <Upload className="w-4 h-4" />
-            Upload Sample Payload
-          </a>
         </div>
       </div>
 
@@ -108,7 +101,7 @@ export default function Hero() {
               <polyline
                 points="0,32 15,28 30,30 45,18 60,20 75,10 100,6"
                 fill="none"
-                stroke="#22D3EE"
+                stroke="#D12E32"
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"

@@ -96,7 +96,7 @@ export default function IntegrationFlow() {
           <svg viewBox="0 0 1600 400" className="w-full h-auto min-w-[1080px]" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="High-level flow diagram">
             <defs>
               <marker id="arrowH" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-                <path d="M0,0 L6,3 L0,6 Z" fill="#22D3EE"></path>
+                <path d="M0,0 L6,3 L0,6 Z" fill="#D12E32"></path>
               </marker>
             </defs>
 
@@ -104,10 +104,10 @@ export default function IntegrationFlow() {
             <path d="M230,200 H320" stroke="#7C8AA8" strokeWidth="1.5" fill="none" markerEnd="url(#arrowH)"></path>
             <path d="M230,345 C275,345 275,250 320,204" stroke="#7C8AA8" strokeWidth="1.5" fill="none" markerEnd="url(#arrowH)"></path>
 
-            <path d="M510,200 H550" stroke="#22D3EE" strokeWidth="1.75" fill="none" className="flow-path" markerEnd="url(#arrowH)"></path>
+            <path d="M510,200 H550" stroke="#D12E32" strokeWidth="1.75" fill="none" className="flow-path" markerEnd="url(#arrowH)"></path>
 
-            <path d="M650,125 C650,95 700,112 830,112" stroke="#22D3EE" strokeWidth="1.5" fill="none" markerEnd="url(#arrowH)"></path>
-            <text x="710" y="90" textAnchor="middle" fill="#22D3EE" fontSize="12" fontFamily="JetBrains Mono, monospace">as a sender</text>
+            <path d="M650,125 C650,95 700,112 830,112" stroke="#D12E32" strokeWidth="1.5" fill="none" markerEnd="url(#arrowH)"></path>
+            <text x="710" y="90" textAnchor="middle" fill="#D12E32" fontSize="12" fontFamily="JetBrains Mono, monospace">as a sender</text>
 
             <path d="M650,275 C650,305 700,337 830,337" stroke="#7C8AA8" strokeWidth="1.5" fill="none" markerEnd="url(#arrowH)"></path>
             <text x="710" y="360" textAnchor="middle" fill="#94A3B8" fontSize="12" fontFamily="JetBrains Mono, monospace">as a responder</text>
@@ -127,7 +127,7 @@ export default function IntegrationFlow() {
             >
               <rect
                 x="20" y="20" width="210" height="70" rx="12" fill="#141D33"
-                stroke={hoveredNode === 'schedule' ? '#22D3EE' : '#28334D'}
+                stroke={hoveredNode === 'schedule' ? '#D12E32' : '#28334D'}
               ></rect>
               <text x="125" y="61" textAnchor="middle" fill="#F1F3F7" fontSize="14" fontWeight="600" fontFamily="Plus Jakarta Sans, sans-serif">Schedule</text>
             </g>
@@ -142,7 +142,7 @@ export default function IntegrationFlow() {
             >
               <rect
                 x="20" y="165" width="210" height="70" rx="12" fill="#141D33"
-                stroke={hoveredNode === 'manual' ? '#22D3EE' : '#28334D'}
+                stroke={hoveredNode === 'manual' ? '#D12E32' : '#28334D'}
               ></rect>
               <text x="125" y="196" textAnchor="middle" fill="#F1F3F7" fontSize="14" fontWeight="600" fontFamily="Plus Jakarta Sans, sans-serif">Manual</text>
               <text x="125" y="216" textAnchor="middle" fill="#7C8AA8" fontSize="10.5" fontFamily="JetBrains Mono, monospace">run scenario</text>
@@ -158,7 +158,7 @@ export default function IntegrationFlow() {
             >
               <rect
                 x="20" y="310" width="210" height="70" rx="12" fill="#141D33"
-                stroke={hoveredNode === 'inbound' ? '#22D3EE' : '#28334D'}
+                stroke={hoveredNode === 'inbound' ? '#D12E32' : '#28334D'}
               ></rect>
               <text x="125" y="341" textAnchor="middle" fill="#F1F3F7" fontSize="14" fontWeight="600" fontFamily="Plus Jakarta Sans, sans-serif">Inbound request</text>
               <text x="125" y="361" textAnchor="middle" fill="#7C8AA8" fontSize="10" fontFamily="JetBrains Mono, monospace">from system under test</text>
@@ -174,9 +174,9 @@ export default function IntegrationFlow() {
             >
               <rect
                 x="320" y="155" width="190" height="90" rx="14" fill="#16233F"
-                stroke={hoveredNode === 'suite' ? '#22D3EE' : 'rgba(34,211,238,0.4)'}
+                stroke={hoveredNode === 'suite' ? '#D12E32' : 'rgba(209,46,50,0.4)'}
               ></rect>
-              <text x="415" y="188" textAnchor="middle" fill="#22D3EE" fontSize="11" fontFamily="JetBrains Mono, monospace">QATALYST</text>
+              <text x="415" y="188" textAnchor="middle" fill="#D12E32" fontSize="11" fontFamily="JetBrains Mono, monospace">QATALYST</text>
               <text x="415" y="215" textAnchor="middle" fill="#F1F3F7" fontSize="15" fontWeight="700" fontFamily="Plus Jakarta Sans, sans-serif">Suite Run</text>
             </g>
 
@@ -190,7 +190,7 @@ export default function IntegrationFlow() {
             >
               <polygon
                 points="650,125 750,200 650,275 550,200" fill="#141D33"
-                stroke={hoveredNode === 'mode' ? '#22D3EE' : '#7C8AA8'}
+                stroke={hoveredNode === 'mode' ? '#D12E32' : '#7C8AA8'}
               ></polygon>
               <text x="650" y="205" textAnchor="middle" fill="#F1F3F7" fontSize="13.5" fontWeight="600" fontFamily="Plus Jakarta Sans, sans-serif">Mode</text>
             </g>
@@ -205,7 +205,7 @@ export default function IntegrationFlow() {
             >
               <rect
                 x="830" y="65" width="300" height="95" rx="14" fill="#141D33"
-                stroke={hoveredNode === 'sender_action' ? '#22D3EE' : '#28334D'}
+                stroke={hoveredNode === 'sender_action' ? '#D12E32' : '#28334D'}
               ></rect>
               <text x="980" y="106" textAnchor="middle" fill="#F1F3F7" fontSize="13.5" fontWeight="600" fontFamily="Plus Jakarta Sans, sans-serif">Build &amp; send transaction</text>
               <text x="980" y="128" textAnchor="middle" fill="#7C8AA8" fontSize="12" fontFamily="JetBrains Mono, monospace">→ check the reply</text>
@@ -221,7 +221,7 @@ export default function IntegrationFlow() {
             >
               <rect
                 x="830" y="290" width="300" height="95" rx="14" fill="#141D33"
-                stroke={hoveredNode === 'responder_action' ? '#22D3EE' : '#28334D'}
+                stroke={hoveredNode === 'responder_action' ? '#D12E32' : '#28334D'}
               ></rect>
               <text x="980" y="331" textAnchor="middle" fill="#F1F3F7" fontSize="13.5" fontWeight="600" fontFamily="Plus Jakarta Sans, sans-serif">Reply from matched scenario</text>
               <text x="980" y="353" textAnchor="middle" fill="#7C8AA8" fontSize="12" fontFamily="JetBrains Mono, monospace">→ check the request</text>
@@ -237,7 +237,7 @@ export default function IntegrationFlow() {
             >
               <rect
                 x="1210" y="155" width="160" height="90" rx="14" fill="#141D33"
-                stroke={hoveredNode === 'report' ? '#22D3EE' : '#28334D'}
+                stroke={hoveredNode === 'report' ? '#D12E32' : '#28334D'}
               ></rect>
               <text x="1290" y="192" textAnchor="middle" fill="#F1F3F7" fontSize="13.5" fontWeight="600" fontFamily="Plus Jakarta Sans, sans-serif">Run</text>
               <text x="1290" y="212" textAnchor="middle" fill="#F1F3F7" fontSize="13.5" fontWeight="600" fontFamily="Plus Jakarta Sans, sans-serif">Report</text>
@@ -253,7 +253,7 @@ export default function IntegrationFlow() {
             >
               <rect
                 x="1440" y="160" width="140" height="80" rx="14" fill="#0F1F19"
-                stroke={hoveredNode === 'result' ? '#22D3EE' : '#34D399'} strokeOpacity={0.4}
+                stroke={hoveredNode === 'result' ? '#D12E32' : '#34D399'} strokeOpacity={0.4}
               ></rect>
               <text x="1510" y="196" textAnchor="middle" fill="#34D399" fontSize="13" fontWeight="700" fontFamily="Plus Jakarta Sans, sans-serif">Result</text>
               <text x="1510" y="215" textAnchor="middle" fill="#34D399" fontSize="11" fontStyle="italic" fontFamily="Plus Jakarta Sans, sans-serif">dashboard</text>

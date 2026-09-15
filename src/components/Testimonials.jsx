@@ -46,7 +46,7 @@ export default function Testimonials() {
               <polyline
                 points="0,15 30,20 60,18 90,32 120,28 150,45 200,50"
                 fill="none"
-                stroke="#34D399"
+                stroke="#6E8FC7"
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"

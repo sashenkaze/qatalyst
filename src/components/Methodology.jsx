@@ -34,8 +34,8 @@ export default function Methodology() {
                 ></circle>
                 <defs>
                   <linearGradient id="gaugeGrad" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stopColor="#22D3EE"></stop>
-                    <stop offset="100%" stopColor="#818CF8"></stop>
+                    <stop offset="0%" stopColor="#D12E32"></stop>
+                    <stop offset="100%" stopColor="#2E5AA5"></stop>
                   </linearGradient>
                 </defs>
               </svg>

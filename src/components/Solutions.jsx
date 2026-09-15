@@ -50,21 +50,21 @@ export default function Solutions() {
               <svg viewBox="0 0 900 220" className="w-full h-auto min-w-[640px]" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="QAtalyst simulating the acquirer, sending requests to your issuer or core banking host">
                 <defs>
                   <marker id="arrowA" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-                    <path d="M0,0 L6,3 L0,6 Z" fill="#22D3EE"></path>
+                    <path d="M0,0 L6,3 L0,6 Z" fill="#D12E32"></path>
                   </marker>
                   <marker id="arrowB" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
                     <path d="M0,0 L6,3 L0,6 Z" fill="#7C8AA8"></path>
                   </marker>
                 </defs>
-                <path d="M300,90 H560" stroke="#22D3EE" strokeWidth="1.75" fill="none" className="flow-path" markerEnd="url(#arrowA)"></path>
-                <text x="430" y="80" textAnchor="middle" fill="#22D3EE" fontSize="11.5" fontFamily="JetBrains Mono, monospace">request</text>
+                <path d="M300,90 H560" stroke="#D12E32" strokeWidth="1.75" fill="none" className="flow-path" markerEnd="url(#arrowA)"></path>
+                <text x="430" y="80" textAnchor="middle" fill="#D12E32" fontSize="11.5" fontFamily="JetBrains Mono, monospace">request</text>
 
                 <path d="M560,150 H300" stroke="#7C8AA8" strokeWidth="1.5" fill="none" strokeDasharray="4 4" markerEnd="url(#arrowB)"></path>
                 <text x="430" y="168" textAnchor="middle" fill="#94A3B8" fontSize="11.5" fontFamily="JetBrains Mono, monospace">response</text>
 
                 <g>
-                  <rect x="60" y="40" width="240" height="140" rx="14" fill="#16233F" stroke="#22D3EE" strokeOpacity="0.4"></rect>
-                  <text x="180" y="72" textAnchor="middle" fill="#22D3EE" fontSize="11" fontFamily="JetBrains Mono, monospace">QATALYST</text>
+                  <rect x="60" y="40" width="240" height="140" rx="14" fill="#16233F" stroke="#D12E32" strokeOpacity="0.4"></rect>
+                  <text x="180" y="72" textAnchor="middle" fill="#D12E32" fontSize="11" fontFamily="JetBrains Mono, monospace">QATALYST</text>
                   <text x="180" y="100" textAnchor="middle" fill="#F1F3F7" fontSize="15" fontWeight="700" fontFamily="Plus Jakarta Sans, sans-serif">Acting as</text>
                   <text x="180" y="120" textAnchor="middle" fill="#F1F3F7" fontSize="15" fontWeight="700" fontFamily="Plus Jakarta Sans, sans-serif">Acquirer / Terminal</text>
                   <text x="180" y="150" textAnchor="middle" fill="#94A3B8" fontSize="11" fontFamily="JetBrains Mono, monospace">POS · ATM · QR scan</text>
@@ -93,14 +93,14 @@ export default function Solutions() {
                     <path d="M0,0 L6,3 L0,6 Z" fill="#7C8AA8"></path>
                   </marker>
                   <marker id="arrowD" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
-                    <path d="M0,0 L6,3 L0,6 Z" fill="#22D3EE"></path>
+                    <path d="M0,0 L6,3 L0,6 Z" fill="#D12E32"></path>
                   </marker>
                 </defs>
                 <path d="M300,90 H560" stroke="#7C8AA8" strokeWidth="1.5" fill="none" markerEnd="url(#arrowC)"></path>
                 <text x="430" y="80" textAnchor="middle" fill="#94A3B8" fontSize="11.5" fontFamily="JetBrains Mono, monospace">request</text>
 
-                <path d="M560,150 H300" stroke="#22D3EE" strokeWidth="1.75" fill="none" className="flow-path" markerEnd="url(#arrowD)"></path>
-                <text x="430" y="168" textAnchor="middle" fill="#22D3EE" fontSize="11.5" fontFamily="JetBrains Mono, monospace">response</text>
+                <path d="M560,150 H300" stroke="#D12E32" strokeWidth="1.75" fill="none" className="flow-path" markerEnd="url(#arrowD)"></path>
+                <text x="430" y="168" textAnchor="middle" fill="#D12E32" fontSize="11.5" fontFamily="JetBrains Mono, monospace">response</text>
 
                 <g>
                   <rect x="60" y="40" width="240" height="140" rx="14" fill="#141D33" stroke="#28334D"></rect>
@@ -111,8 +111,8 @@ export default function Solutions() {
                 </g>
 
                 <g>
-                  <rect x="600" y="40" width="240" height="140" rx="14" fill="#16233F" stroke="#22D3EE" strokeOpacity="0.4"></rect>
-                  <text x="720" y="72" textAnchor="middle" fill="#22D3EE" fontSize="11" fontFamily="JetBrains Mono, monospace">QATALYST</text>
+                  <rect x="600" y="40" width="240" height="140" rx="14" fill="#16233F" stroke="#D12E32" strokeOpacity="0.4"></rect>
+                  <text x="720" y="72" textAnchor="middle" fill="#D12E32" fontSize="11" fontFamily="JetBrains Mono, monospace">QATALYST</text>
                   <text x="720" y="100" textAnchor="middle" fill="#F1F3F7" fontSize="15" fontWeight="700" fontFamily="Plus Jakarta Sans, sans-serif">Acting as</text>
                   <text x="720" y="120" textAnchor="middle" fill="#F1F3F7" fontSize="15" fontWeight="700" fontFamily="Plus Jakarta Sans, sans-serif">Issuer Host</text>
                   <text x="720" y="150" textAnchor="middle" fill="#94A3B8" fontSize="11" fontFamily="JetBrains Mono, monospace">Approves, declines, times out</text>

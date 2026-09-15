@@ -23,10 +23,6 @@ export default function Navbar() {
               className="h-8 w-auto object-contain shrink-0"
               style={{ height: '32px', width: 'auto' }}
             />
-            {/* <span className="font-display font-bold text-lg text-white tracking-tight">QAtalyst</span> */}
-            <span className="hidden sm:inline text-[11px] chip text-mist-400 border border-white/10 rounded px-1.5 py-0.5 leading-none">
-              qatalyst.hbm.co.id
-            </span>
           </a>
 
           <div className="hidden lg:flex items-center gap-8 text-sm text-mist-200">
