@@ -603,3 +603,13 @@ details.faq[open] summary .chevron {
 .light .grid-overlay {
   background-image: linear-gradient(rgba(15, 23, 42, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(15, 23, 42, 0.05) 1px, transparent 1px) !important;
 }
+
+/* Gradient CTAs & active pills keep white labels in light mode
+   (specificity 0,3,0 beats .light .text-white's 0,2,0) */
+.light .bg-gradient-to-r.text-white,
+.light .bg-gradient-to-br.text-white,
+.light .bg-gradient-to-b.text-white,
+.light .bg-gradient-to-t.text-white,
+.light .pill-tab.pill-active {
+  color: #ffffff !important;
+}
