@@ -3,9 +3,9 @@ import { UserCheck, ShieldCheck, Workflow, ArrowRight } from 'lucide-react';
 
 export default function QaaS() {
   return (
-    <section id="qaas" className="relative py-24 lg:py-28">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-14 items-center">
+    <section id="qaas" className="relative py-16 sm:py-24 lg:py-28 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-14 items-center">
           <div>
             <span className="eyebrow"><span className="dot"></span>Hybrid Model</span>
             <h2 className="mt-5 font-display font-bold text-3xl sm:text-4xl text-white tracking-tight leading-tight">

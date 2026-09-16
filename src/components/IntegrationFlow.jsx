@@ -54,9 +54,9 @@ export default function IntegrationFlow() {
   };
 
   return (
-    <section className="relative py-24 lg:py-28">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-14 items-start mb-12">
+    <section className="relative py-16 sm:py-24 lg:py-28 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14 items-start mb-8 sm:mb-12">
           <div>
             <span className="eyebrow"><span className="dot"></span>Integration</span>
             <h2 className="mt-5 font-display font-bold text-3xl sm:text-4xl text-white tracking-tight">How regression integration runs.</h2>
@@ -92,7 +92,7 @@ export default function IntegrationFlow() {
           </div>
         </div>
 
-        <div className="theme-fixed-dark rounded-2xl border border-white/10 bg-ink-850 p-4 sm:p-8 overflow-x-auto">
+        <div className="theme-fixed-dark rounded-2xl border border-white/10 bg-ink-850 p-4 sm:p-8 overflow-x-auto max-w-full">
           <svg viewBox="0 0 1600 400" className="w-full h-auto min-w-[1080px]" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="High-level flow diagram">
             <defs>
               <marker id="arrowH" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">

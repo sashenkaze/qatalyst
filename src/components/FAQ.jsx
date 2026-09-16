@@ -27,8 +27,8 @@ export default function FAQ() {
   ];
 
   return (
-    <section id="faq" className="relative py-24 lg:py-32 bg-paper-50 text-ink-800">
-      <div className="max-w-3xl mx-auto px-6 lg:px-8">
+    <section id="faq" className="relative py-16 sm:py-24 lg:py-32 bg-paper-50 text-ink-800 overflow-hidden">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-line bg-paper-100 px-3.5 py-1.5 text-xs text-ink-500">
             <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600"></span>FAQ

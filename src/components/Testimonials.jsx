@@ -2,23 +2,23 @@ import React from 'react';
 
 export default function Testimonials() {
   return (
-    <section className="relative py-24 lg:py-28">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="relative py-16 sm:py-24 lg:py-28 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mb-10">
           <span className="eyebrow"><span className="dot"></span>Testimonials</span>
-          <h2 className="mt-5 font-display font-bold text-3xl sm:text-4xl text-white tracking-tight">
+          <h2 className="mt-4 sm:mt-5 font-display font-bold text-2xl sm:text-4xl text-white tracking-tight">
             The Trust Our Clients Place in Us.
           </h2>
           <p className="mt-3 text-mist-300 leading-relaxed">How our partners see the stability and speed of testing alongside QAtalyst.</p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-5">
-          <div className="rounded-2xl border border-white/10 bg-ink-800 p-7 flex flex-col justify-between">
+        <div className="grid gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="rounded-2xl border border-white/10 bg-ink-800 p-6 sm:p-7 flex flex-col justify-between min-w-0">
             <span className="font-display font-extrabold text-4xl text-white">92%</span>
             <p className="text-sm text-mist-400 mt-3 leading-relaxed">Average scenario coverage our clients reach within their first sprint using QAtalyst.</p>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-ink-800 p-7 flex flex-col justify-between">
+          <div className="rounded-2xl border border-white/10 bg-ink-800 p-6 sm:p-7 flex flex-col justify-between min-w-0">
             <p className="text-sm text-mist-200 leading-relaxed">
               QAtalyst's regression reports aren't just a bug list. The team gives us
               strategic, actionable risk analysis — we closed critical gaps before
@@ -37,8 +37,8 @@ export default function Testimonials() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-white/10 bg-ink-800 p-7 flex flex-col justify-between">
-            <div className="flex items-center justify-between">
+          <div className="rounded-2xl border border-white/10 bg-ink-800 p-6 sm:p-7 flex flex-col justify-between min-w-0 md:col-span-2 lg:col-span-1">
+            <div className="flex items-center justify-between gap-2">
               <span className="font-display font-extrabold text-3xl text-white">-85%</span>
               <span className="chip text-[10px] text-pass bg-pass/10 border border-pass/30 rounded px-1.5 py-0.5">CYCLE TIME</span>
             </div>

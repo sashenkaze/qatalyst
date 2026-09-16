@@ -3,8 +3,8 @@ import { ShieldCheck, Radar, Headset, Lock } from 'lucide-react';
 
 export default function Features() {
   return (
-    <section id="features" className="relative py-24 lg:py-28 border-y border-white/5 bg-white/[0.02]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="features" className="relative py-16 sm:py-24 lg:py-28 border-y border-white/5 bg-white/[0.02] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="eyebrow"><span className="dot"></span>Why QAtalyst</span>
           <h2 className="mt-5 font-display font-bold text-3xl sm:text-4xl text-white tracking-tight">
@@ -16,7 +16,7 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-3 gap-5 sm:grid-flow-row-dense sm:auto-rows-[180px]">
+        <div className="grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3 sm:auto-rows-[180px]">
           {/* Card 1 */}
           <div className="rounded-2xl border border-white/10 bg-ink-800 p-6 sm:row-span-1">
             <div className="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center mb-4">
@@ -29,7 +29,7 @@ export default function Features() {
           </div>
 
           {/* Card 2 */}
-          <div className="graphic-panel rounded-2xl p-6 sm:row-span-2 flex flex-col justify-between overflow-hidden">
+          <div className="graphic-panel rounded-2xl p-6 sm:row-span-2 flex flex-col justify-between gap-6 overflow-hidden min-h-[18rem] sm:min-h-0">
             <img
               src="https://images.unsplash.com/photo-1695668548342-c0c1ad479aee?auto=format&fit=crop&w=1200&q=70"
               alt="Radar-style monitoring dashboard for proactive regression testing"

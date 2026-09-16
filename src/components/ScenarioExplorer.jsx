@@ -5,8 +5,8 @@ export default function ScenarioExplorer() {
   const [activeTab, setActiveTab] = useState('bill');
 
   return (
-    <section id="scenarios" className="relative py-24 lg:py-28">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="scenarios" className="relative py-16 sm:py-24 lg:py-28 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mb-12">
           <span className="eyebrow"><span className="dot"></span>Test Scenarios</span>
           <h2 className="mt-5 font-display font-bold text-3xl sm:text-4xl text-white tracking-tight">Explore the test scenario library.</h2>
@@ -16,9 +16,9 @@ export default function ScenarioExplorer() {
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-1 border-b border-white/10 mb-8" role="tablist" aria-label="Test scenario categories">
+        <div className="flex gap-1 overflow-x-auto border-b border-white/10 mb-6 sm:mb-8" role="tablist" aria-label="Test scenario categories">
           <button
-            className={`scenario-tab tab-underline px-4 sm:px-5 py-3 text-sm font-medium ${
+            className={`scenario-tab tab-underline shrink-0 whitespace-nowrap px-3 sm:px-5 py-3 text-[13px] sm:text-sm font-medium ${
               activeTab === 'bill' ? 'tab-active text-white' : 'text-mist-400 hover:text-mist-200'
             }`}
             onClick={() => setActiveTab('bill')}
@@ -28,7 +28,7 @@ export default function ScenarioExplorer() {
             Bill Payment
           </button>
           <button
-            className={`scenario-tab tab-underline px-4 sm:px-5 py-3 text-sm font-medium ${
+            className={`scenario-tab tab-underline shrink-0 whitespace-nowrap px-3 sm:px-5 py-3 text-[13px] sm:text-sm font-medium ${
               activeTab === 'qris' ? 'tab-active text-white' : 'text-mist-400 hover:text-mist-200'
             }`}
             onClick={() => setActiveTab('qris')}
@@ -38,7 +38,7 @@ export default function ScenarioExplorer() {
             QRIS &amp; E-Wallet
           </button>
           <button
-            className={`scenario-tab tab-underline px-4 sm:px-5 py-3 text-sm font-medium ${
+            className={`scenario-tab tab-underline shrink-0 whitespace-nowrap px-3 sm:px-5 py-3 text-[13px] sm:text-sm font-medium ${
               activeTab === 'card' ? 'tab-active text-white' : 'text-mist-400 hover:text-mist-200'
             }`}
             onClick={() => setActiveTab('card')}
@@ -48,7 +48,7 @@ export default function ScenarioExplorer() {
             Card Schemes &amp; ISO 8583
           </button>
           <button
-            className={`scenario-tab tab-underline px-4 sm:px-5 py-3 text-sm font-medium ${
+            className={`scenario-tab tab-underline shrink-0 whitespace-nowrap px-3 sm:px-5 py-3 text-[13px] sm:text-sm font-medium ${
               activeTab === 'fraud' ? 'tab-active text-white' : 'text-mist-400 hover:text-mist-200'
             }`}
             onClick={() => setActiveTab('fraud')}
@@ -61,8 +61,8 @@ export default function ScenarioExplorer() {
 
         {/* BILL PAYMENT */}
         {activeTab === 'bill' && (
-          <div className="scenario-panel grid lg:grid-cols-2 gap-8">
-            <div>
+          <div className="scenario-panel grid gap-6 md:grid-cols-2 lg:gap-8">
+            <div className="min-w-0">
               <h3 className="font-display font-semibold text-xl text-white mb-1">Bill Payment — Inquiry to Confirmation</h3>
               <p className="text-sm text-mist-400 mb-6">Validates the full biller inquiry → payment → confirmation cycle, including a customer-not-found negative path.</p>
               <ol className="space-y-4">
@@ -86,15 +86,15 @@ export default function ScenarioExplorer() {
                 </li>
               </ol>
             </div>
-            <div className="rounded-xl overflow-hidden border border-white/10 bg-ink-950 theme-fixed-dark">
+            <div className="rounded-xl overflow-hidden border border-white/10 bg-ink-950 theme-fixed-dark min-w-0">
               <div className="flex items-center justify-between px-4 py-2.5 border-b border-white/10">
                 <span className="chip text-xs text-mist-500">payload · ISO 8583 (0200)</span>
                 <span className="chip text-[10px] text-pass border border-pass/40 rounded px-1.5 py-0.5">SAMPLE</span>
               </div>
-              <pre className="font-mono text-[12px] leading-6 p-4 overflow-x-auto text-slate-300">
+              <pre className="font-mono text-[11px] sm:text-[12px] leading-6 p-3 sm:p-4 max-w-full overflow-x-auto text-slate-300">
                 <span className="text-cyan-400">MTI</span>        0200{"\n"}
                 <span className="text-cyan-400">DE003</span> ProcCode      28 00 00{"\n"}
-                <span className="text-cyan-400">DE004</span> Amount        000000150000{"\n"}
+                <span className="text-cyan-400">DE004</span> Amount        000015000000{"\n"}
                 <span className="text-cyan-400">DE018</span> MerchCategory 6051{"\n"}
                 <span className="text-cyan-400">DE041</span> TermId        QATLYST01{"\n"}
                 <span className="text-cyan-400">DE048</span> BillerCode    88908{"\n"}
@@ -106,7 +106,7 @@ export default function ScenarioExplorer() {
 
         {/* QRIS */}
         {activeTab === 'qris' && (
-          <div className="scenario-panel grid lg:grid-cols-2 gap-8">
+          <div className="scenario-panel grid gap-6 md:grid-cols-2 lg:gap-8">
             <div>
               <h3 className="font-display font-semibold text-xl text-white mb-1">QRIS MPM — Static QR Top-Up</h3>
               <p className="text-sm text-mist-400 mb-6">Covers merchant-presented QR scan-to-pay with a dynamic amount overlay and NMID validation.</p>
@@ -131,12 +131,12 @@ export default function ScenarioExplorer() {
                 </li>
               </ol>
             </div>
-            <div className="rounded-xl overflow-hidden border border-white/10 bg-ink-950 theme-fixed-dark">
+            <div className="rounded-xl overflow-hidden border border-white/10 bg-ink-950 theme-fixed-dark min-w-0">
               <div className="flex items-center justify-between px-4 py-2.5 border-b border-white/10">
                 <span className="chip text-xs text-mist-500">payload · QRIS MPM (JSON)</span>
                 <span className="chip text-[10px] text-pass border border-pass/40 rounded px-1.5 py-0.5">SAMPLE</span>
               </div>
-              <pre className="font-mono text-[12px] leading-6 p-4 overflow-x-auto text-slate-300 font-normal">
+              <pre className="font-mono text-[11px] sm:text-[12px] leading-6 p-3 sm:p-4 max-w-full overflow-x-auto text-slate-300 font-normal">
 {`{
   `}
                 <span className="text-cyan-400">"nmid"</span>: <span className="text-violet-400">"ID1023456789012"</span>,{"\n"}  
@@ -153,7 +153,7 @@ export default function ScenarioExplorer() {
 
         {/* CARD SCHEMES */}
         {activeTab === 'card' && (
-          <div className="scenario-panel grid lg:grid-cols-2 gap-8">
+          <div className="scenario-panel grid gap-6 md:grid-cols-2 lg:gap-8">
             <div>
               <h3 className="font-display font-semibold text-xl text-white mb-1">Card Scheme Switch — EMV Authorization</h3>
               <p className="text-sm text-mist-400 mb-6">Simulates a chip-and-PIN authorization through a debit switch, including a stand-in decline path.</p>
@@ -178,12 +178,12 @@ export default function ScenarioExplorer() {
                 </li>
               </ol>
             </div>
-            <div className="rounded-xl overflow-hidden border border-white/10 bg-ink-950 theme-fixed-dark">
+            <div className="rounded-xl overflow-hidden border border-white/10 bg-ink-950 theme-fixed-dark min-w-0">
               <div className="flex items-center justify-between px-4 py-2.5 border-b border-white/10">
                 <span className="chip text-xs text-mist-500">payload · ISO 8583 (0100)</span>
                 <span className="chip text-[10px] text-pass border border-pass/40 rounded px-1.5 py-0.5">SAMPLE</span>
               </div>
-              <pre className="font-mono text-[12px] leading-6 p-4 overflow-x-auto text-slate-300">
+              <pre className="font-mono text-[11px] sm:text-[12px] leading-6 p-3 sm:p-4 max-w-full overflow-x-auto text-slate-300">
                 <span className="text-cyan-400">MTI</span>        0100{"\n"}
                 <span className="text-cyan-400">DE002</span> PAN           4021••••••1123{"\n"}
                 <span className="text-cyan-400">DE003</span> ProcCode      00 00 00{"\n"}
@@ -198,7 +198,7 @@ export default function ScenarioExplorer() {
 
         {/* FRAUD & SETTLEMENT */}
         {activeTab === 'fraud' && (
-          <div className="scenario-panel grid lg:grid-cols-2 gap-8">
+          <div className="scenario-panel grid gap-6 md:grid-cols-2 lg:gap-8">
             <div>
               <h3 className="font-display font-semibold text-xl text-white mb-1">Fraud Velocity — Authorization Decline</h3>
               <p className="text-sm text-mist-400 mb-6">Exercises a velocity-based fraud rule on repeated authorizations, then reconciles the result at settlement.</p>
@@ -223,16 +223,16 @@ export default function ScenarioExplorer() {
                 </li>
               </ol>
             </div>
-            <div className="rounded-xl overflow-hidden border border-white/10 bg-ink-950 theme-fixed-dark">
+            <div className="rounded-xl overflow-hidden border border-white/10 bg-ink-950 theme-fixed-dark min-w-0">
               <div className="flex items-center justify-between px-4 py-2.5 border-b border-white/10">
                 <span className="chip text-xs text-mist-500">payload · ISO 8583 (0110)</span>
                 <span className="chip text-[10px] text-warn border border-warn/40 rounded px-1.5 py-0.5">EDGE CASE</span>
               </div>
-              <pre className="font-mono text-[12px] leading-6 p-4 overflow-x-auto text-slate-300">
+              <pre className="font-mono text-[11px] sm:text-[12px] leading-6 p-3 sm:p-4 max-w-full overflow-x-auto text-slate-300">
                 <span className="text-cyan-400">MTI</span>        0110{"\n"}
                 <span className="text-cyan-400">DE002</span> PAN           4021••••••1123{"\n"}
                 <span className="text-cyan-400">DE003</span> ProcCode      00 00 00{"\n"}
-                <span className="text-cyan-400">DE004</span> Amount        000000075000{"\n"}
+                <span className="text-cyan-400">DE004</span> Amount        00007500000{"\n"}
                 <span className="text-cyan-400">DE011</span> STAN          004826{"\n"}
                 <span className="text-cyan-400">DE037</span> RetrRefNum    250910004826{"\n"}
                 <span className="text-fail">DE039</span> RespCode      <span className="text-fail">61 (velocity limit)</span>

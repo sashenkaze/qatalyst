@@ -30,8 +30,8 @@ export default function Portfolio() {
   ];
 
   return (
-    <section className="relative py-24 lg:py-28 border-t border-white/5 bg-white/[0.02]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="relative py-16 sm:py-24 lg:py-28 border-t border-white/5 bg-white/[0.02] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between gap-6 flex-wrap mb-10">
           <div className="max-w-xl">
             <span className="eyebrow"><span className="dot"></span>Portfolio</span>
@@ -48,7 +48,7 @@ export default function Portfolio() {
 
         <div className="carousel flex gap-5 overflow-x-auto no-scrollbar pb-2">
           {items.map((item, idx) => (
-            <div key={idx} className="shrink-0 w-[300px]">
+            <div key={idx} className="shrink-0 w-[85vw] max-w-[300px] sm:w-[300px] min-w-0">
               <div className="graphic-panel rounded-2xl h-56 flex items-center justify-center overflow-hidden">
                 <img
                   src={item.img}

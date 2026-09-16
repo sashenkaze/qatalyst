@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Methodology() {
   return (
-    <section className="relative py-24 lg:py-28">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="relative py-16 sm:py-24 lg:py-28 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-4">
           <span className="eyebrow"><span className="dot"></span>Testing Approach</span>
         </div>
@@ -11,8 +11,8 @@ export default function Methodology() {
           We Test Systematically. Protocol-Accurate. No Guesswork.
         </h2>
 
-        <div className="mt-14 grid lg:grid-cols-2 gap-10 items-center">
-          <div className="relative graphic-panel rounded-2xl h-96 flex items-center justify-center overflow-hidden">
+        <div className="mt-10 sm:mt-14 grid gap-8 lg:grid-cols-2 lg:gap-10 items-center">
+          <div className="relative graphic-panel rounded-2xl min-h-[20rem] sm:h-96 flex items-center justify-center overflow-hidden py-14 sm:py-0">
             <img
               src="https://images.unsplash.com/photo-1754039984985-ef607d80113a?auto=format&fit=crop&w=1200&q=70"
               alt="QA engineer reviewing regression test coverage"

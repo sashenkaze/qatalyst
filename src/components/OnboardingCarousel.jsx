@@ -15,8 +15,8 @@ export default function OnboardingCarousel() {
   };
 
   return (
-    <section className="relative py-24 lg:py-28 border-y border-white/5 bg-white/[0.02] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="relative py-16 sm:py-24 lg:py-28 border-y border-white/5 bg-white/[0.02] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between gap-6 flex-wrap mb-10">
           <div className="max-w-xl">
             <span className="eyebrow"><span className="dot"></span>Onboarding Stages</span>
@@ -97,7 +97,7 @@ export default function OnboardingCarousel() {
             href="#/contact"
             className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-semibold px-6 py-3 hover:brightness-110 transition"
           >
-            Try the Free Sandbox
+            Try the Sandbox
             <ArrowRight className="w-4 h-4" />
           </a>
         </div>

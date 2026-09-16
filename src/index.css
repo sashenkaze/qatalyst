@@ -2,6 +2,80 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ===== Global responsive safety net (mobile -> ultrawide) ===== */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+img.absolute,
+svg.absolute {
+  height: 100%;
+}
+
+pre,
+code {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+pre {
+  max-width: 100%;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+}
+
+section,
+header,
+footer,
+main,
+div {
+  min-width: 0;
+}
+
+/* Long IDR numbers, chips, payload text must not push layout wide */
+.price-amount,
+.chip,
+.font-mono {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Thin horizontal scroll areas (SVG flow, carousels) stay swipeable */
+.overflow-x-auto {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+/* Very small phones: tighten default section gutters */
+@media (max-width: 380px) {
+  .eyebrow {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+}
+
+/* Foldables / tiny landscape: keep 2-col stat grids from crushing */
+@media (max-width: 360px) {
+  .grid.grid-cols-2 {
+    gap: 0.625rem;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

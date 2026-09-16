@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Check } from 'lucide-react';
 
+const DISPLAY_EMAIL = 'sales@hbm.co.id';
+const SEND_TO_EMAIL = 'marketing@hbm.co.id';
+
 const highlights = [
   'Fast response from an expert team, not an automated bot',
   'Free initial consultation with no commitment',
@@ -9,7 +12,7 @@ const highlights = [
 
 const contactChannels = [
   { icon: Phone, label: 'Phone', value: '+62 21 27893347' },
-  { icon: Mail, label: 'Email', value: 'sales@hbm.co.id' },
+  { icon: Mail, label: 'Email', value: DISPLAY_EMAIL },
   {
     icon: MapPin,
     label: 'Office',
@@ -33,21 +36,51 @@ const inputClass =
 const labelClass = 'mb-1 block text-sm font-medium text-mist-200';
 
 export default function ContactUs() {
-  const [submitted, setSubmitted] = useState(false);
+  const [sent, setSent] = useState(false);
+  const [mailtoHref, setMailtoHref] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    const firstName = String(data.get('firstName') || '').trim();
+    const lastName = String(data.get('lastName') || '').trim();
+    const email = String(data.get('email') || '').trim();
+    const phone = String(data.get('phone') || '').trim();
+    const company = String(data.get('company') || '').trim();
+    const subject = String(data.get('subject') || 'General inquiry').trim();
+    const message = String(data.get('message') || '').trim();
+
+    const fullName = `${firstName} ${lastName}`.trim();
+    const mailSubject = `[QAtalyst] ${subject} — ${fullName || company || email}`;
+    const lines = [
+      `Name: ${fullName || '-'}`,
+      `Business Email: ${email || '-'}`,
+      `Phone: ${phone || '-'}`,
+      `Company: ${company || '-'}`,
+      `Subject: ${subject}`,
+      '',
+      'Message:',
+      message || '-',
+    ];
+    const body = lines.join('\n');
+    const href = `mailto:${SEND_TO_EMAIL}?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(body)}`;
+
+    setMailtoHref(href);
+    setSent(true);
+    // Open the visitor's mail app (Gmail/Outlook) with everything pre-filled.
+    window.location.href = href;
   };
 
   return (
     <section id="contact-us" className="bg-[#F8FAFC] pt-24 pb-16 sm:pt-28 sm:pb-20">
-      <div className="mx-auto grid w-full max-w-7xl items-stretch gap-10 px-6 lg:grid-cols-2 lg:px-8">
+      <div className="mx-auto grid w-full max-w-7xl items-start gap-8 px-4 sm:px-6 lg:grid-cols-2 lg:gap-10 lg:px-8">
         {/* Left column: intro + contact channels */}
         <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">Get in Touch</p>
-          <h2 className="mt-5 text-4xl font-semibold text-violet-600">Let's Start a Conversation</h2>
-          <p className="mt-4 text-lg leading-8 text-mist-300">
+          <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-cyan-400">Get in Touch</p>
+          <h2 className="mt-4 sm:mt-5 text-3xl sm:text-4xl font-semibold text-violet-600">Let's Start a Conversation</h2>
+          <p className="mt-3 sm:mt-4 text-base sm:text-lg leading-7 sm:leading-8 text-mist-300">
             Have questions about QAtalyst, need technical consultation, or want to see the platform in
             action? Our team is ready to respond within 1 business day.
           </p>
@@ -80,27 +113,34 @@ export default function ContactUs() {
         </div>
 
         {/* Right column: message form */}
-        <div className="rounded-3xl border border-gray-200 bg-white p-8 shadow-lg">
+        <div className="w-full min-w-0 rounded-3xl border border-gray-200 bg-white p-5 sm:p-8 shadow-lg">
           <h2 className="mb-1 text-2xl font-bold text-ink-950">Send a Message</h2>
           <p className="mb-5 text-sm text-mist-300">
             Fill in the form below and our team will contact you shortly.
           </p>
 
-          {submitted ? (
-            <div className="flex min-h-[420px] flex-col items-center justify-center text-center">
+          {sent ? (
+            <div className="flex min-h-[320px] sm:min-h-[420px] flex-col items-center justify-center px-2 text-center">
               <span className="flex h-14 w-14 items-center justify-center rounded-full bg-violet-500/10">
                 <Check className="h-7 w-7 text-violet-400" />
               </span>
-              <h3 className="mt-5 text-xl font-bold text-ink-950">Message sent!</h3>
+              <h3 className="mt-5 text-xl font-bold text-ink-950">Opening your email app…</h3>
               <p className="mt-2 max-w-sm text-sm text-mist-300">
-                Thanks for reaching out — our team will get back to you within 1 business day.
+                We pre-filled an email to <span className="font-semibold">{SEND_TO_EMAIL}</span> with
+                your subject and message. Just press Send there.
               </p>
+              <a
+                href={mailtoHref}
+                className="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-cyan-500 to-violet-600 py-3 font-semibold text-white transition hover:brightness-110"
+              >
+                Open email again
+              </a>
               <button
                 type="button"
-                onClick={() => setSubmitted(false)}
-                className="mt-6 text-sm font-semibold text-cyan-400 hover:underline"
+                onClick={() => setSent(false)}
+                className="mt-3 text-sm font-semibold text-cyan-400 hover:underline"
               >
-                Send another message
+                Edit details
               </button>
             </div>
           ) : (

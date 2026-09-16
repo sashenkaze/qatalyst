@@ -3,10 +3,10 @@ import { PowerOff, TrendingDown, ShieldAlert, UserX } from 'lucide-react';
 
 export default function Risk() {
   return (
-    <section className="relative py-24 lg:py-28 border-y border-white/5 bg-white/[0.02]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="relative py-16 sm:py-24 lg:py-28 border-y border-white/5 bg-white/[0.02] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <span className="eyebrow"><span className="dot"></span>The Cost of Skipping Testing</span>
-        <h2 className="mt-5 font-display font-bold text-3xl sm:text-4xl text-white tracking-tight max-w-2xl">
+        <h2 className="mt-4 sm:mt-5 font-display font-bold text-2xl sm:text-4xl text-white tracking-tight max-w-2xl">
           Releasing Without Thorough Testing? The Risk Is Real.
         </h2>
         <p className="mt-4 text-mist-300 text-lg leading-relaxed max-w-2xl">
@@ -31,7 +31,7 @@ export default function Risk() {
           </a>
         </div>
 
-        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="mt-10 sm:mt-14 grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
           <div className="rounded-xl border border-white/10 bg-ink-800 p-6">
             <div className="w-10 h-10 rounded-lg bg-fail/10 flex items-center justify-center mb-4">
               <PowerOff className="w-5 h-5 text-fail" />

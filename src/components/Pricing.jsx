@@ -19,12 +19,12 @@ export default function Pricing() {
   const fmtIDR = (n) => Math.round(n).toLocaleString('id-ID');
 
   return (
-    <section id="pricing" className="relative py-24 lg:py-28 border-t border-white/5 bg-white/[0.02]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+    <section id="pricing" className="relative py-16 sm:py-24 lg:py-28 border-t border-white/5 bg-white/[0.02] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto">
           <span className="eyebrow"><span className="dot"></span>Pricing</span>
-          <h2 className="mt-5 font-display font-bold text-3xl sm:text-4xl text-white tracking-tight">Pricing that scales with your switch.</h2>
-          <p className="mt-4 text-mist-300 text-lg leading-relaxed">
+          <h2 className="mt-4 sm:mt-5 font-display font-bold text-2xl sm:text-4xl text-white tracking-tight">Pricing that scales with your switch.</h2>
+          <p className="mt-3 sm:mt-4 text-mist-300 text-base sm:text-lg leading-relaxed">
             Start on one protocol in a sandbox. Move to the full suite when your integration does. Talk to us when your infrastructure needs a partner, not a subscription.
           </p>
         </div>
@@ -49,9 +49,9 @@ export default function Pricing() {
           <span className="chip text-[11px] text-pass bg-pass/10 border border-pass/30 rounded-full px-2.5 py-1">Save 20%</span>
         </div>
 
-        <div className="mt-14 grid lg:grid-cols-3 gap-6 items-start">
+        <div className="mt-10 sm:mt-14 grid gap-5 sm:gap-6 md:grid-cols-2 lg:grid-cols-3 items-stretch">
           {/* STARTER */}
-          <div className="rounded-2xl border border-white/10 bg-ink-800 p-7 flex flex-col h-full">
+          <div className="rounded-2xl border border-white/10 bg-ink-800 p-6 sm:p-6 sm:p-7 flex flex-col h-full min-w-0 min-w-0">
             <div className="flex items-center gap-2 text-mist-300">
               <FlaskConical className="w-[18px] h-[18px]" />
               <span className="text-sm font-medium">Starter</span>
@@ -59,10 +59,10 @@ export default function Pricing() {
             <p className="chip text-[11px] text-mist-500 mt-1">PTS-BASIC-MODULE</p>
             <div className="mt-5 flex items-baseline gap-1.5">
               <span className="chip text-mist-400 text-lg">Rp</span>
-              <span className="price-amount font-display font-extrabold text-4xl text-white">
+              <span className="price-amount font-display font-extrabold text-3xl sm:text-4xl text-white">
                 {isAnnual ? '10' : '12.5'}
               </span>
-              <span className="font-display font-extrabold text-4xl text-white">M</span>
+              <span className="font-display font-extrabold text-3xl sm:text-4xl text-white">M</span>
               <span className="text-mist-400 text-sm">/ month</span>
             </div>
             <p className="text-xs text-mist-500 mt-1.5">
@@ -70,7 +70,7 @@ export default function Pricing() {
             </p>
             <p className="text-sm text-mist-400 mt-4">For fintech sandboxes &amp; single-protocol integrators validating one payment rail.</p>
 
-            <a href="#/contact" className="mt-6 block text-center rounded-full border border-white/15 text-white font-semibold py-3 hover:bg-white/10 transition">Start Free Sandbox</a>
+            <a href="#/contact" className="mt-6 block text-center rounded-full border border-white/15 text-white font-semibold py-3 hover:bg-white/10 transition">Start Sandbox</a>
 
             <ul className="mt-7 space-y-3 text-sm text-mist-300">
               <li className="flex gap-2.5"><Check className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />Core platform, dashboards &amp; monitoring</li>
@@ -86,7 +86,7 @@ export default function Pricing() {
           </div>
 
           {/* PROFESSIONAL */}
-          <div className="relative rounded-2xl border border-cyan-400/40 bg-gradient-to-b from-violet-500/[0.08] to-transparent p-7 flex flex-col h-full shadow-glow lg:-mt-4 lg:mb-4">
+          <div className="relative rounded-2xl border border-cyan-400/40 bg-gradient-to-b from-violet-500/[0.08] to-transparent p-6 sm:p-7 min-w-0 md:col-span-2 lg:col-span-1 flex flex-col h-full min-w-0 shadow-glow lg:-mt-4 lg:mb-4">
             <span className="absolute -top-3 left-7 chip text-[11px] font-semibold text-white bg-gradient-to-r from-cyan-400 to-violet-400 rounded-full px-3 py-1">MOST POPULAR</span>
             <div className="flex items-center gap-2 text-cyan-300">
               <Rocket className="w-[18px] h-[18px]" />
@@ -95,10 +95,10 @@ export default function Pricing() {
             <p className="chip text-[11px] text-mist-500 mt-1">PTS-PRO</p>
             <div className="mt-5 flex items-baseline gap-1.5">
               <span className="chip text-mist-400 text-lg">Rp</span>
-              <span className="price-amount font-display font-extrabold text-4xl text-white">
+              <span className="price-amount font-display font-extrabold text-3xl sm:text-4xl text-white">
                 {isAnnual ? '30.4' : '38'}
               </span>
-              <span className="font-display font-extrabold text-4xl text-white">M</span>
+              <span className="font-display font-extrabold text-3xl sm:text-4xl text-white">M</span>
               <span className="text-mist-400 text-sm">/ month</span>
             </div>
             <p className="text-xs text-mist-500 mt-1.5">
@@ -106,7 +106,7 @@ export default function Pricing() {
             </p>
             <p className="text-sm text-mist-300 mt-4">For growing switch integrators, PSPs and payment gateways running full-suite regression.</p>
 
-            <a href="#/contact" className="mt-6 block text-center rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 text-white font-semibold py-3 hover:brightness-110 transition">Start Free Sandbox</a>
+            <a href="#/contact" className="mt-6 block text-center rounded-full bg-gradient-to-r from-cyan-500 to-violet-500 text-white font-semibold py-3 hover:brightness-110 transition">Start Sandbox</a>
 
             <ul className="mt-7 space-y-3 text-sm text-mist-200">
               <li className="flex gap-2.5"><Check className="w-4 h-4 text-cyan-400 shrink-0 mt-0.5" />Everything in Starter, plus:</li>
@@ -121,14 +121,14 @@ export default function Pricing() {
           </div>
 
           {/* ENTERPRISE */}
-          <div className="rounded-2xl border border-white/10 bg-ink-800 p-7 flex flex-col h-full">
+          <div className="rounded-2xl border border-white/10 bg-ink-800 p-6 sm:p-7 flex flex-col h-full min-w-0">
             <div className="flex items-center gap-2 text-mist-300">
               <Building2 className="w-[18px] h-[18px]" />
               <span className="text-sm font-medium">Enterprise</span>
             </div>
             <p className="chip text-[11px] text-mist-500 mt-1">PTS-ENTERPRISE</p>
             <div className="mt-5 flex items-baseline gap-1.5">
-              <span className="font-display font-extrabold text-4xl text-white">Custom</span>
+              <span className="font-display font-extrabold text-3xl sm:text-4xl text-white">Custom</span>
             </div>
             <p className="text-xs text-mist-500 mt-1.5">Scoped to your infrastructure &amp; SLA</p>
             <p className="text-sm text-mist-400 mt-4">For core banking platforms and large financial institutions who need a testing partner, not just a tool.</p>
@@ -154,8 +154,8 @@ export default function Pricing() {
         </p>
 
         {/* ROI CALCULATOR */}
-        <div className="mt-24 rounded-2xl border border-white/10 bg-ink-850 p-6 sm:p-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="mt-14 sm:mt-24 rounded-2xl border border-white/10 bg-ink-850 p-5 sm:p-10 overflow-hidden">
+          <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
             <div>
               <h3 className="font-display font-bold text-2xl sm:text-3xl text-white tracking-tight">What's manual regression actually costing you?</h3>
               <p className="mt-3 text-mist-300 leading-relaxed">Move the sliders to match your team, and see what automating your payment test cycles could save each month.</p>
@@ -212,7 +212,7 @@ export default function Pricing() {
               <p className="chip text-xs text-mist-400 mb-1">Estimated monthly savings</p>
               <div className="flex items-baseline gap-2">
                 <span className="text-mist-300 text-2xl font-display">Rp</span>
-                <span className="font-display font-extrabold text-4xl sm:text-5xl text-white">{fmtIDR(costSaved)}</span>
+                <span className="font-display font-extrabold text-3xl sm:text-5xl text-white break-all">{fmtIDR(costSaved)}</span>
               </div>
               <p className="text-sm text-mist-400 mt-2">based on ~<span className="text-cyan-400 chip">70%</span> of manual regression effort automated away.</p>
 
